@@ -1,38 +1,78 @@
-# Energy Consumption Analysis
+```markdown
+# Electricity Usage Exploratory Data Analysis
 
-This repository contains a Jupyter Notebook that analyzes energy consumption data. The notebook performs data cleaning, exploration, and visualization to identify trends and patterns in energy usage.
+## Energy Consumption Analysis  
+This repository contains a Jupyter Notebook that analyzes electricity usage data. The notebook performs data cleaning, exploration, and visualization to identify trends and patterns in electricity consumption.
 
-## Dataset
+## Dataset  
+The dataset used in this analysis is **Energy Consumption Data.csv**, containing time‐stamped records of electricity usage.
 
-The dataset used in this analysis is "Energy Consumption Data.csv", containing information about energy consumption over time.
-
-## Analysis Steps
-
+## Analysis Steps  
 The notebook follows these steps:
 
-1. **Data Loading and Cleaning:** Imports necessary libraries, loads the dataset, and handles missing values.
-2. **Exploratory Data Analysis:** Calculates descriptive statistics, visualizes data distributions, and explores relationships between variables.
-3. **Time Series Analysis:** Resamples the data to analyze trends on different time scales (yearly, quarterly, weekly, daily).
-4. **Visualization:** Creates visualizations to present the findings, including box plots, histograms, and line charts.
+1. **Data Loading and Cleaning**  
+   - Import necessary libraries  
+   - Load the dataset  
+   - Handle missing values and correct data types  
 
-## Tools Used
+2. **Exploratory Data Analysis**  
+   - Calculate descriptive statistics (`.describe()`, `.info()`)  
+   - Visualize distributions and relationships (histograms, box plots, scatter plots)  
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* SciPy
+3. **Time Series Analysis**  
+   - Resample data for yearly, quarterly, monthly, and daily trends  
+   - Decompose seasonal and trend components  
 
-## Findings
+4. **Visualization**  
+   - Generate line charts, bar charts, scatter plots, distribution plots, and box plots to highlight key patterns  
 
+## Tools Used  
+- Python 3.x  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
 
-## Usage
+## Findings  
+- **Temperature vs. Consumption**  
+  No strong or consistent correlation between average temperature and energy consumption, suggesting either highly efficient building insulation/cooling systems or that additional variables (e.g., occupancy, equipment load) are needed to reveal clearer patterns.
 
-1. Clone the repository: `git clone https://github.com/gurny/energy-consumption-analysis.git`
-2. Open the Jupyter Notebook: `Energy Consumption Analysis.ipynb`
-3. Run the notebook cells to execute the analysis.
+- **Weekday vs. Weekend Usage**  
+  Energy consumption is markedly lower on weekends and peaks during mid‐week days, reflecting reduced commercial and industrial activity on weekends and consistent business, office, and residential usage during the week.
 
-## Contributing
+- **Daily Demand Cycle**  
+  A pronounced diurnal pattern: consumption rises during daytime hours (work and household routines) and declines overnight when most people are asleep and businesses are closed.
 
-Contributions are welcome! Feel free to open issues or pull requests for bug fixes, feature additions, or improvements to the analysis.
+- **Overall Distribution**  
+  Hourly usage follows an approximately normal distribution with a slight right skew—most values cluster at moderate levels, while the long right tail captures occasional high‐consumption days (e.g., seasonal peaks or special events).
+
+- **Variability by Day Type**  
+  Weekdays exhibit both a higher median consumption and greater variability compared to weekends, underscoring the impact of the standard workweek on electricity demand.
+
+## Usage  
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/yourusername/electricity-usage-eda.git
+   ```  
+2. **Navigate to the project directory**  
+   ```bash
+   cd electricity-usage-eda
+   ```  
+3. **Install dependencies**  
+   ```bash
+   pip install -r requirements.txt
+   ```  
+4. **Open the Jupyter Notebook**  
+   ```bash
+   jupyter notebook Electricity_Usage_Exploratory_Data_Analysis.ipynb
+   ```  
+5. **Run the notebook cells** to execute the full analysis.
+
+## Contributing  
+Contributions are welcome! Please open an issue or submit a pull request to propose changes, fix bugs, or improve visualizations.
+
+---
+
+**License**  
+This project is licensed under the MIT License.  
+```
