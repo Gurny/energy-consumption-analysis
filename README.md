@@ -1,4 +1,3 @@
-```markdown
 # Electricity Usage Exploratory Data Analysis
 
 ## Energy Consumption Analysis  
